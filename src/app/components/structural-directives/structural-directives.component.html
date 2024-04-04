@@ -1,1 +1,19 @@
-<p>structural-directives works!</p>
+<ul>
+  <li *ngFor="let letter of letters">{{ letter }}</li>
+</ul>
+
+<ul>
+  <ng-container *ngFor="let letter of letters">
+    <li *ngIf="letter !== 'B'">{{ letter }}</li>
+  </ng-container>
+</ul>
+
+<ul>
+  <ng-container *ngFor="let letter of letters">
+    <ng-container [ngSwitch]="letter">
+      <li *ngSwitchCase="'A'">1</li>
+      <li *ngSwitchCase="'B'">2</li>
+      <li *ngSwitchCase="'C'">3</li>
+    </ng-container>
+  </ng-container>
+</ul>
