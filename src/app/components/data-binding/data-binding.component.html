@@ -1,0 +1,15 @@
+<section class="exercise">
+  <h2>4. Data Binding</h2>
+
+  <h3>Event Binding</h3>
+  <button (click)="openAlert()">Click me</button>
+
+  <h3>One Way Data Binding</h3>
+  <input type="text" [value]="textOne" />
+
+  <h3>Two Way Data Binding</h3>
+  <p>
+    <span>{{ textTwo }}</span>
+  </p>
+  <input type="text" [(ngModel)]="textTwo" />
+</section>
