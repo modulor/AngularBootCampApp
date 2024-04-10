@@ -4,10 +4,11 @@ import { AttributeDirectivesComponent } from './components/attribute-directives/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
+import { CapitalizeDirective } from './directives/capitalize.directive';
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent, AttributeDirectivesComponent, StructuralDirectivesComponent],
+  declarations: [AppComponent, AttributeDirectivesComponent, StructuralDirectivesComponent, CapitalizeDirective],
   imports: [AppRoutingModule, BrowserModule],
   providers: [],
 })
