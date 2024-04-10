@@ -5,10 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
 import { CapitalizeDirective } from './directives/capitalize.directive';
+import { CustomDirectivesComponent } from './components/custom-directives/custom-directives.component';
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent, AttributeDirectivesComponent, StructuralDirectivesComponent, CapitalizeDirective],
+  declarations: [AppComponent, AttributeDirectivesComponent, StructuralDirectivesComponent, CapitalizeDirective, CustomDirectivesComponent],
   imports: [AppRoutingModule, BrowserModule],
   providers: [],
 })
